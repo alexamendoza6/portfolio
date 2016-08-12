@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Alexa's Portfolio</title>
+	</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<script>
+      function myFunction() {
+        var image = document.getElementById("image");
+		var visit = "http://s6.postimg.org/furc4xn6p/d368d9c73d4b82ca5c27c6be1e5ae601.gif";
+		var code = "http://static1.squarespace.com/static/52d62550e4b09a1f1b0861f1/t/52fbec7be4b003139ba67d98/1469046588256/?format=1000w";
+		
+		
+		//image.src = "http://static1.squarespace.com/static/52d62550e4b09a1f1b0861f1/t/52fbec7be4b003139ba67d98/1469046588256/?format=1000w"
+		//image.alt ="alexa is cool";
+		
+		if (image.src == visit) {
+			image.src = code ;
+			image.alt = "its fun!"
+			}
+		else {
+		image.src= visit;
+		image.alt = "thanks!"
+		}
+      }
+	 
+</script>
+<style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+body { background-image: url("https://s-media-cache-ak0.pinimg.com/564x/e5/4c/e3/e54ce3f0587c231344f7d68fc48b91a8.jpg");
+background-color: white;}
+h1   {color: black; }
+h1 { background-color: #DCF1A1;}
+h4 { background-color: white;}
+p {color: black;}
+
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-sidenav a,.w3-sidenav h4 {font-weight:bold}
+</style>
+
+<body>
+<div class = "container">
+<ul class="w3-navbar w3-black w3-card-2 w3-top w3-left-align w3-large"> 
+  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+    <a class="w3-padding-large w3-hover-white w3-large w3-orange" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+ </li>
+					<!--NAV BAR-->
+ <li><a href="portfolio.html" class="w3-padding-large w3-white">About Me</a></li>
+ 
+ <li class="w3-hide-small"><a href="sports.html" class="w3-padding-large w3-hover-white">Sports</a></li>
+ 
+ <li class="w3-hide-small"><a href="service.html" class="w3-padding-large w3-hover-white">Service</a></li>
+
+ <li class="w3-hide-small"><a href="skills.html" class="w3-padding-large w3-hover-white">Skills</a></li>
+ 
+ <li class="w3-hide-small"><a href="eca.html" class="w3-padding-large w3-hover-white">Extra Curricular Activities</a></li>
+</ul>
+
+
+
+<br><br>
+<center><h1>Alexa Mendoza's Portfolio</h1></center>
+
+	<center> <img src="photoportfolio.png" alt="Alexa" style="width:300px;height:200px;"></center>
+<div class="cs">
+<center><h4> Hey,I am Alexa Mendoza. My interestes include music, running, and coding. I often listen to rock. The sports I enjoy are cross country and track.I have interests in the engineering field. I also have interest in computer science. </h4>
+<h4>I have tutord kids and cannot wait to teach them to code!</h4></center>
+  
+  
+    <center><h1 id="code"><img id = "image" src="http://s6.postimg.org/furc4xn6p/d368d9c73d4b82ca5c27c6be1e5ae601.gif"></h1></center>
+	
+    <center> <button id="btn" onclick="myFunction()">Click me!</button></center>
+	
+</div>
+
+
+
+</body>
+</html>
+
